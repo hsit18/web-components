@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Web components</title>
+    <script defer src="./index.js"></script>
+    <style>
+      h2 {
+        color: red;
+      }
+    </style>
+  </head>
+
+  <body>
+    <shadow-observer-component> 
+        Slot 1
+        <span slot="description">Help text</span>
+    </shadow-observer-component>
+    <shadow-observer-component checked> 
+        Slot 2
+        <span slot="description">Help text</span>
+    </shadow-observer-component>
+    <shadow-observer-component> 
+        Slot 3
+        <span slot="description">Help text</span>
+    </shadow-observer-component>
+  </body>
+</html>
